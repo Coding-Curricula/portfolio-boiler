@@ -54,6 +54,47 @@
   width: 100%;
 }
 
+.skills-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.skills h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.skills p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skill-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+}
+
+.skill-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
 .hobbies-container {
   display: flex;
   justify-content: center;

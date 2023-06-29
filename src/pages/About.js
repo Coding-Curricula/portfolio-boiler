@@ -35,18 +35,25 @@ function FunFact() {
   )
 }
 
-function Skills({ skills }) {
+function Skills({ newSkills }) {
   return (
     <div className='skills-container'>
       <h2>Skills</h2>
-      <ul className='skills'>
-        {skills.map((skill, index) => (
-          <li key={index} className='skill-card'>{skill}</li>
+      <div className='skills'>
+        {newSkills.map((skill, index) => (
+          <div className='skill-card' key={index}>
+            <div className='skill-icon' style={{ backgroundColor: skill.color }}>
+              <i className={skill.icon}></i>
+            </div>
+            <h3>{skill.name}</h3>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
+
+
 
 function WorkExperience() {
   return (
@@ -82,7 +89,7 @@ export default function About({ skills }) {
         <WorkExperience />
         <Education />
       </div>
-      <Skills skills={skills} />
+      <Skills newSkills={skills} />
       <Hobbies />
       <FunFact />
     </div>
